@@ -1,0 +1,25 @@
+{
+  "name": "team-profile-generator-mk-1",
+  "version": "1.0.0",
+  "description": "A node.js program that generates an HTML webpage that summarizes information about your team.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanAcham/Team-Profile-Generator-MK-1.git"
+  },
+  "author": "ryan acham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RyanAcham/Team-Profile-Generator-MK-1/issues"
+  },
+  "homepage": "https://github.com/RyanAcham/Team-Profile-Generator-MK-1#readme",
+  "dependencies": {
+    "inquirer": "^6.3.1"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
