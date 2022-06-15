@@ -42,15 +42,15 @@ function managerQuery() {
               },
             ])
             .then((val) => {
-              const manager = new Manager(
+              const manager1 = new manager(
                 val.name,
                 val.id,
                 val.email,
                 val.officeNumber
               );
-              console.table(manager);
-              teamMembers.push(manager);
-              addTeamMember();
+              console.table(manager1);
+              teamMemb.push(manager1);
+              addMember();
             });
 }
 
@@ -100,10 +100,10 @@ function enigeQuery() {
               },
             ])
             .then((val) => {
-              const engineer = new Engineer(val.name, val.id, val.email, val.github);
-              console.table(engineer);
-              teamMembers.push(engineer);
-              addTeamMember();
+              const engineer1 = new engineer(val.name, val.id, val.email, val.github);
+              console.table(engineer1);
+              teamMemb.push(engineer1);
+              addMember();
             });
 }
 
@@ -133,15 +133,21 @@ function internQuery() {
         },
       ])
       .then((val) => {
-        const intern = new Intern(val.name, val.id, val.email, val.school);
-        console.table(intern)
-        teamMembers.push(intern);
-        addTeamMember();
+        const intern1 = new intern(val.name, val.id, val.email, val.school);
+        console.table(intern1)
+        teamMemb.push(intern1);
+        addMember();
       });
 }
 
 function createFile() {
-
+    if (!fs.existsSync(output_dir)) {
+        fs.mkdirSync(output_dir);
+      } else {
+    
+        fs.writeFileSync(outputPath, render(teamMemb), "UTF-8");
+        console.log("File created");
+      }
 }
 
 start();

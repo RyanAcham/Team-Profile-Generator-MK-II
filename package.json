@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/RyanAcham/Team-Profile-Generator-MK-1#readme",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "inquirer": "^6.5.2"
   },
   "devDependencies": {
     "jest": "^24.9.0"
