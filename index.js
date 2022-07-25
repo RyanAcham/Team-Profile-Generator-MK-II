@@ -66,7 +66,7 @@ function addMember() {
     ])
     .then((val) => {
       if (val.what_type === "Engineer") {
-        engineerQuery();
+        engieQuery();
       } else if (val.what_type === "Intern") {
         internQuery();
       } else {
@@ -75,7 +75,7 @@ function addMember() {
     });
 }
 
-function enigeQuery() {
+function engieQuery() {
     inquirer
         .prompt([
             {
@@ -100,7 +100,7 @@ function enigeQuery() {
               },
             ])
             .then((val) => {
-              const engineer1 = new engineer(val.name, val.id, val.email, val.github);
+              const engineer1 = new engie(val.name, val.id, val.email, val.github);
               console.table(engineer1);
               teamMemb.push(engineer1);
               addMember();
@@ -141,13 +141,14 @@ function internQuery() {
 }
 
 function createFile() {
-    if (!fs.existsSync(output_dir)) {
-        fs.mkdirSync(output_dir);
-      } else {
-    
-        fs.writeFileSync(outputPath, render(teamMemb), "UTF-8");
-        console.log("File created");
-      }
+  if (!fs.existsSync(output_dir)) {
+    fs.mkdirSync(output_dir);
+  } else {
+
+    fs.writeFileSync(outputPath, render(teamMemb), "UTF-8");
+    console.log("File created.");
+  }
+  
 }
 
 start();
