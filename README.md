@@ -1,4 +1,4 @@
-# Team-Profile-Generator-MK-1
+# Team-Profile-Generator-MK-II
 A node.js program that generates an HTML webpage that summarizes information about your team.
 
 Tutorial:
