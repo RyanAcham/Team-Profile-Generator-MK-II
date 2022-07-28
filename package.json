@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RyanAcham/Team-Profile-Generator-MK-1.git"
+    "url": "git+https://github.com/RyanAcham/Team-Profile-Generator-MK-II.git"
   },
   "author": "ryan acham",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RyanAcham/Team-Profile-Generator-MK-1/issues"
+    "url": "https://github.com/RyanAcham/Team-Profile-Generator-MK-II/issues"
   },
-  "homepage": "https://github.com/RyanAcham/Team-Profile-Generator-MK-1#readme",
+  "homepage": "https://github.com/RyanAcham/Team-Profile-Generator-MK-II1#readme",
   "dependencies": {
     "inquirer": "^6.5.2"
   },
